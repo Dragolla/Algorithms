@@ -5,17 +5,20 @@ Example:
 Given A = [1,2,3,5,6} the code should return 4 as the answer
 Given A = [-100, -200], the code should return 1 as the answer
 """
-arr = [1,2,3,4,5,7,8,9] #test array
+#test array
+arr = [1,2,3,4,5,7,8,9]
 def solution(A):
     d = {}
+    # create a dict, with values of array as keys
     for i in A:
         if i not in d:
             d[i] = "placeholder"
-    start = 1
+    num = 1
+    # checks if value of num already exists in dict
     for i in d:
-        if start in d:
-            start += 1
+        if num in d:
+            num += 1
         else:
-            print(start) 
+            print(num)
             break
 solution(arr) #should print 6
