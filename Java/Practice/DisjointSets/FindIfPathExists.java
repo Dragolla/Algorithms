@@ -1,5 +1,4 @@
-package Practice;
-import Notes.QuickUnion.QuickUnionUF;
+package Practice.DisjointSets;
 public class FindIfPathExists {
     private int[] id;
     private int[] sz;
