@@ -62,7 +62,7 @@ public int[] findRedundantConnection(int[][] edges) {
         // loop to find if the parent of first edge
         for (int[] edge : edges){
         // is equal to the parent of second edge, 
-            if(fr.root(edge[0]) == fr.root(edge[1])){
+            if(fr.connected(edge[0], edge[1])){
                 //this means we have found the redundant connection
                 return new int[] {edge[0], edge[1]};
             }
